@@ -1,0 +1,12 @@
+name: Scheduled Echo
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+
+jobs:
+  echo-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo command
+        run: echo 1
