@@ -1,6 +1,7 @@
 name: Scheduled Echo
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: '*/5 * * * *'
 
